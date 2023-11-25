@@ -2,7 +2,7 @@ const bodyEl = document.querySelector('body');
 const blurBtnEl = document.querySelector('#blur-btn');
 
 blurBtnEl.addEventListener("click", () => {
-  bluringBgc(blurBtnEl);
+  bluringBgc(bodyEl);
 })
 
 function bluringBgc(element) {
