@@ -6,9 +6,17 @@
 }
 
 /* Utility classes */
-.blurred-img {
+.bgc-blurred {
   -webkit-backdrop-filter: blur(1rem);
   backdrop-filter: blur(1rem);
+}
+
+.blurred {
+  filter: blur(1rem);
+}
+
+.transition-time {
+  transition: all .5s;
 }
 /* Utility classes */
 
@@ -32,6 +40,7 @@ section {
   background-color: rgba(30, 30, 40, 1);
   width: 100%;
   height: 20rem;
+  padding: 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,8 +51,33 @@ section {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: rgba(243, 243, 243, 1);
   text-align: center;
-  margin: 5rem 0 2.5rem 0;
+  margin: 2.5rem 0 2.5rem 0;
   font-size: 2.5em;
+}
+
+.blur-btn {
+  width: 20rem;
+  height: 5rem;
+  margin: 0 auto;
+  font-size: .8em;
+  font-weight: bold;
+  padding: 1rem;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  color: rgba(30, 30, 40, 1);
+  background-color: rgb(238, 238, 40);
+  border-radius: 1rem;
+}
+
+.blur-btn:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: rgb(191, 191, 5);
+}
+
+.blur-btn:active {
+  transform: scale(.95);
 }
 
 .highlight {

@@ -1,10 +1,14 @@
 const bodyEl = document.querySelector('body');
 const blurBtnEl = document.querySelector('#blur-btn');
+const formEl = document.querySelector('#form')
+const sectionEl = document.querySelector('#main-section');
 
 blurBtnEl.addEventListener("click", () => {
-  bluringBgc(bodyEl);
+  bluringBgc(bodyEl, sectionEl, formEl);
 })
 
-function bluringBgc(element) {
-  element.classList.add('blurred-img');
+function bluringBgc(bgcBlurred, elementBlurred, elementToAppear) {
+  bgcBlurred.classList.add('bgc-blurred', 'transition-time');
+  elementBlurred.classList.add('blurred', 'transition-time');
+  // elementToAppear.style.display = 'block';
 }
