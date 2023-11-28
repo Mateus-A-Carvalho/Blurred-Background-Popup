@@ -10,5 +10,5 @@ blurBtnEl.addEventListener("click", () => {
 function bluringBgc(bgcBlurred, elementBlurred, elementToAppear) {
   bgcBlurred.classList.add('bgc-blurred', 'transition-time');
   elementBlurred.classList.add('blurred', 'transition-time');
-  // elementToAppear.style.display = 'block';
+  elementToAppear.style.visibility = 'visible';
 }

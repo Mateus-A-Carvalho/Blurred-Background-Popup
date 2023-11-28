@@ -85,5 +85,16 @@ section {
 }
 
 .form {
-  display: none;
+  visibility: hidden;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  padding: 2.5rem;
+  width: 50rem;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column nowrap;
+  background: red;
+  border: .5rem solid #000;
 }
