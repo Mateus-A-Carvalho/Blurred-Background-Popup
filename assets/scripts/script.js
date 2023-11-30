@@ -17,11 +17,14 @@ document.addEventListener("click", (e) => {
 function bluringBgc(bgcBlurred, elementBlurred, elementToAppear) {
   bgcBlurred.classList.add('bgc-blurred', 'transition-time');
   elementBlurred.classList.add('blurred', 'transition-time');
+  elementToAppear.classList.add('slide-in-blurred-top');
+  elementToAppear.classList.remove('slide-out-blurred-top')
   elementToAppear.style.visibility = 'visible';
 }
 
 function closingElement (element, bgcBlurred, elementBlurred) {
-  element.style.visibility = 'hidden';
+  element.classList.add('slide-out-blurred-top')
+  element.classList.remove('slide-in-blurred-top')
   bgcBlurred.classList.remove('bgc-blurred');
   elementBlurred.classList.remove('blurred');
 }
