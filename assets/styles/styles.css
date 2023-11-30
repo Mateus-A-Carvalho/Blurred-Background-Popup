@@ -139,3 +139,34 @@ textarea.text-area {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: rgba(242, 242, 242);
 }
+
+input[placeholder],
+textarea[placeholder] {
+  font-style: italic;
+  text-align: center;
+}
+
+.request-btn {
+  height: 5rem;
+  padding: 1rem 2.5rem;
+  border-radius: .5rem;
+  font-weight: bold;
+  letter-spacing: .3rem;
+  background-color: rgba(30, 30, 40, 1);
+  color: rgba(243, 243, 243, 1);
+  cursor: pointer;
+}
+
+.request-btn:hover {
+  transform: scale(1.05);
+  opacity: .95;
+}
+
+.close-toogle {
+  cursor: pointer;
+}
+
+.close-toogle:hover{
+  transform: scale(1.20);
+}
+
